@@ -5,6 +5,9 @@ A script for performing restarts of the ag-chain-cosmos service (Agoric node).
 Finds the service logs when the service was started and when the first block was received from the chain.
 Calculates the difference between them and displays.
 
+Args:
+   `n` - numbers of restarts
+
 Example::
 
      $ sudo ./agoric_restarter.py
