@@ -114,7 +114,7 @@ def read_log() -> Generator[dict, None, None]:
     Reading the service log using journalctl in real time.
 
     Yields:
-         str: log line.
+         dict: log line.
     """
     cmd = f"journalctl -u {SERVICE_NAME} -o json -n 2 --output-fields=MESSAGE -f"
     process = subprocess.Popen(
